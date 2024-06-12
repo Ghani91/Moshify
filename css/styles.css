@@ -6,6 +6,8 @@
   --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-bodyText: #918ca4;
+  --color-border: #ccc;
+  --border-radious: 30px;
 }
 
 *,
@@ -187,7 +189,6 @@ a {
   cursor: pointer;
   font-size: 1.8rem;
   font-weight: 600;
-  margin-bottom: 2rem;
   padding: 2rem 13rem;
   text-align: center;
   text-transform: uppercase;
@@ -242,5 +243,45 @@ a {
   }
   .btn--block {
     padding: auto;
+  }
+}
+
+/* input */
+
+.input {
+  border-radius: var(--border-radious);
+  border: 0;
+  color: var(--color-headings);
+  font-size: 2rem;
+  font-weight: 400;
+  outline: 0;
+  overflow: hidden;
+  padding: 1.5rem 1rem;
+  white-space: nowrap;
+  width: 100%;
+}
+
+::placeholder {
+  color: #cdcbd7;
+}
+/* input group */
+
+.input-group {
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radious);
+  display: flex;
+}
+
+.input-group .input {
+  border: 0;
+  flex-grow: 1;
+}
+.input-group .btn {
+  margin: 4px;
+}
+
+@media screen and (min-width: 1024px) {
+  .input {
+    font-size: 1.5rem;
   }
 }
