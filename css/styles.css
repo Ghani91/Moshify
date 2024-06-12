@@ -8,6 +8,12 @@
   --color-bodyText: #918ca4;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* typography - adding font family  */
 html {
   font-size: 62.5%;
@@ -178,6 +184,7 @@ a {
 .btn {
   border-radius: 4rem;
   border: 0;
+  cursor: pointer;
   font-size: 1.8rem;
   font-weight: 600;
   margin-bottom: 2rem;
@@ -191,19 +198,30 @@ a {
   background-color: var(--color-primary);
   color: white;
 }
+.btn--primary:hover {
+  background-color: lightblue;
+}
 .btn--secondary {
   background-color: var(--color-secondary);
   color: white;
+}
+.btn--secondary:hover {
+  background-color: #00c8eb;
 }
 
 .btn--dark {
   background-color: var(--color-headings);
   color: white;
 }
-
+.btn--dark:hover {
+  background-color: gray;
+}
 .btn--skeleton {
   border: 2px solid var(--color-headings);
   background-color: white;
+}
+.btn--skeleton:hover {
+  background-color: lightgray;
 }
 .btn--block {
   display: inline-block;
@@ -212,6 +230,9 @@ a {
 .btn--accent {
   background-color: var(--color-accent);
   color: white;
+}
+.btn--accent:hover {
+  background-color: #fd4550;
 }
 
 @media screen and (min-width: 1024px) {
