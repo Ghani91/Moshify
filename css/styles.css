@@ -384,3 +384,30 @@ a {
     padding-bottom: 1.5rem;
   }
 }
+
+/* media */
+
+.media {
+  display: flex;
+}
+.media__image {
+  margin-top: 1.5rem;
+  margin-right: 1rem;
+}
+.media__title {
+  margin-top: 0;
+  font-size: 2.4;
+  font-weight: 600;
+}
+
+.meda__description {
+  font-size: 2rem;
+  color: #7b858b;
+}
+
+@media screen and (min-width: 1024px) {
+  .media__title,
+  .meda__description {
+    font-size: 1.8rem;
+  }
+}
