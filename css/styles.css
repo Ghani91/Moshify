@@ -37,6 +37,7 @@ h5,
 h6 {
   color: var(--color-headings);
   margin-bottom: 1rem;
+  line-height: 1.1;
 }
 
 /* font sizes  */
@@ -676,5 +677,27 @@ a {
   }
   .nav .list__item {
     border: 0;
+  }
+}
+
+/* hero */
+
+.hero {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+.hero .block__text {
+  margin: 2rem 0 5rem;
+  letter-spacing: 1px;
+  color: #b9c3cf;
+}
+
+.hero__banner {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .block__header {
+    text-align: left;
+    align-self: center;
   }
 }
