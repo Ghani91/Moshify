@@ -18,6 +18,11 @@
 }
 
 /* typography - adding font family  */
+
+::selection {
+  background: var(--color-primary);
+  color: #fff;
+}
 html {
   font-size: 62.5%;
 }
@@ -49,6 +54,7 @@ h2 {
 }
 h3 {
   font-size: 3rem;
+  font-weight: 500;
 }
 
 p {
@@ -416,6 +422,7 @@ a {
 
 .media {
   display: flex;
+  margin: 2rem 2rem;
 }
 .media__image {
   margin-top: 1.5rem;
@@ -425,6 +432,7 @@ a {
   margin-top: 0;
   font-size: 2.4;
   font-weight: 600;
+  color: #fff;
 }
 
 .meda__description {
@@ -777,5 +785,36 @@ a {
 @media screen and (min-width: 768px) {
   .features:nth-of-type(even) .features__contents {
     order: 2;
+  }
+}
+
+/* showcase block */
+
+.showcase-block {
+  /* padding: 30rem auto; */
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
+}
+.showcase-block .media {
+  margin-bottom: 4rem;
+}
+
+.showcase-block .block__header {
+  text-align: center;
+}
+
+.showcase-block__image > img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .showcase-block .grid {
+    grid-template-columns: 50% 50%;
+  }
+  .showcase-block__image {
+    justify-self: end;
+  }
+  .showcase-block__image > img {
+    width: auto;
+    max-width: 700px;
   }
 }
