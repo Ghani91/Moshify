@@ -268,7 +268,7 @@ a {
     padding: 1.5rem 3rem;
   }
   .btn--block {
-    padding: auto;
+    padding: 2rem 4rem;
   }
 }
 
@@ -431,7 +431,7 @@ a {
 }
 .media__title {
   margin-top: 0;
-  font-size: 2.4;
+  font-size: 2.4rem;
   font-weight: 600;
   color: #fff;
 }
@@ -543,6 +543,10 @@ a {
 .callout {
   padding: 2rem;
   border-radius: 5px;
+
+  position: absolute;
+  top: -10rem;
+  left: 13rem;
 }
 
 .callout--primary {
@@ -560,8 +564,9 @@ a {
 }
 
 .callout .btn {
-  justify-self: center;
   align-self: center;
+  justify-content: center;
+  padding: 2rem 2rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -598,7 +603,7 @@ a {
   max-height: 0;
   overflow: hidden;
   opacity: 0;
-  transform: all 1s;
+  transition: all 1s;
 }
 
 .collapsible--expanded .collapsible__chevron {
@@ -836,6 +841,9 @@ a {
 
 /* testimonial block */
 
+.testimonial-block {
+  margin-bottom: 6rem;
+}
 .testimonial-block .block__header {
   text-align: center;
 }
@@ -847,6 +855,8 @@ a {
 
 .footer-block {
   background: #232323;
+  position: relative;
+  padding-top: 50vh;
 }
 .footer__section {
   padding: 2rem;
@@ -917,5 +927,8 @@ a {
   .footer-block .collapsible__content {
     opacity: 1;
     max-height: 100%;
+  }
+  .footer-block {
+    padding-top: 10rem;
   }
 }

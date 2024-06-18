@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="deploy your website in less than 60 seconds"
+    />
+    <meta property="og:title" content="Moshify..." />
+    <meta property="og:escription" content="Moshify..." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,6 +17,7 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Moshify</title>
   </head>
   <body>
@@ -23,7 +30,7 @@
             alt="moshify brand logo"
         /></a>
         <svg class="icon icon--white nav__toggler">
-          <use xlink:href="images/sprite.svg#menu"></use>
+          <use href="images/sprite.svg#menu"></use>
         </svg>
         <ul class="list nav__list collapsible__content">
           <li class="list__item"><a href="#">Hosting</a></li>
@@ -36,13 +43,15 @@
     <section class="block block--dark block--skewed-left hero">
       <div class="container grid grid--1x2">
         <header class="block__header block__content">
-          <h1 class="block__heading">Cloud Hosting for Pros</h1>
+          <h1 class="block__heading" data-aos="fade-up">
+            Cloud Hosting for Pros
+          </h1>
           <p class="block__text">
             Deploy Your Website in Less than 60 sedonds.
           </p>
           <a href="#" class="btn btn--streched btn--accent">Get Started</a>
         </header>
-        <picture>
+        <picture data-aos="fade-left">
           <source
             type="image/webp"
             srcset="images/banner.webp 1x, images/banner@2x.webp 2x"
@@ -69,14 +78,14 @@
       <div class="input-group">
         <input
           type="text"
-          name=""
+          name="domain-input"
           id="domainSearch"
           placeholder="Enter domain name here...."
           class="input"
         />
         <button class="btn btn--accent">
           <svg class="icon icon--white">
-            <use xlink:href="images/sprite.svg#search"></use>
+            <use href="images/sprite.svg#search"></use>
           </svg>
           search
         </button>
@@ -90,7 +99,7 @@
         <li>.xyz $10.15</li>
       </ul>
     </section>
-    <section class="block container block-plans">
+    <section class="block container block-plans" data-aos="slide-up">
       <!-- popular plan -->
       <div class="grid grid--1x3">
         <div class="plan">
@@ -172,7 +181,7 @@
         <div class="features__contents">
           <span class="icon-container">
             <svg class="icon icon--primary">
-              <use xlink:href="images/sprite.svg#easy"></use>
+              <use href="images/sprite.svg#easy"></use>
             </svg>
           </span>
           <h3 class="features-contents__heading">Super Easy to Use</h3>
@@ -205,7 +214,7 @@
         <div class="features__contents">
           <span class="icon-container">
             <svg class="icon icon--primary">
-              <use xlink:href="images/sprite.svg#wordpress"></use>
+              <use href="images/sprite.svg#wordpress"></use>
             </svg>
           </span>
           <h3 class="features-contents__heading">Simply Fast Websites</h3>
@@ -238,7 +247,7 @@
         <div class="features__contents">
           <span class="icon-container">
             <svg class="icon icon--primary">
-              <use xlink:href="images/sprite.svg#wordpress"></use>
+              <use href="images/sprite.svg#wordpress"></use>
             </svg>
           </span>
           <h3 class="features-contents__heading">Wordpress Made Easy</h3>
@@ -271,7 +280,7 @@
         <div class="features__contents">
           <span class="icon-container">
             <svg class="icon icon--primary">
-              <use xlink:href="images/sprite.svg#wordpress"></use>
+              <use href="images/sprite.svg#wordpress"></use>
             </svg>
           </span>
           <h3 class="features-contents__heading">24/7 Expert Support</h3>
@@ -317,7 +326,7 @@
           />
           <source
             type="image/png"
-            srcset="images/ipad.png 1x, images/ipad@2x.png"
+            srcset="images/ipad.png 1x, images/ipad@2x.png 2x"
           />
           <img src="images/ipad@2x.png" alt="an ipad" />
         </picture>
@@ -325,7 +334,7 @@
           <div class="media">
             <div class="media__image">
               <svg class="icon icon--primary">
-                <use xlink:href="images/sprites.svg#settings"></use>
+                <use href="images/sprites.svg#settings"></use>
               </svg>
             </div>
             <div class="media__body">
@@ -339,7 +348,7 @@
           <div class="media">
             <div class="media__image">
               <svg class="icon icon--primary">
-                <use xlink:href="images/sprite.svg#growth"></use>
+                <use href="images/sprite.svg#growth"></use>
               </svg>
             </div>
             <div class="media__body">
@@ -353,7 +362,7 @@
           <div class="media">
             <div class="media__image">
               <svg class="icon icon--primary">
-                <use xlink:href="images/sprite.svg#wordpress"></use>
+                <use href="images/sprite.svg#wordpress"></use>
               </svg>
             </div>
             <div class="media__body">
@@ -384,7 +393,7 @@
               class="icon-container testimonial__icon icon-container--accent"
             >
               <svg class="icon icon--white icon--small">
-                <use xlink:href="images/sprite.svg#quotes"></use>
+                <use href="images/sprite.svg#quotes"></use>
               </svg> </span
             ><img
               class="testimonial__author-iamge"
@@ -403,7 +412,7 @@
               <div class="media">
                 <div class="media__image quote__image">
                   <svg class="icon">
-                    <use xlink:href="images/sprite.svg#line"></use>
+                    <use href="images/sprite.svg#line"></use>
                   </svg>
                 </div>
                 <div class="media__body">
@@ -420,14 +429,28 @@
     </section>
     <!-- footer -->
     <footer class="block block--dark footer-block">
+      <div class="container callout callout--primary">
+        <div class="grid grid--1x2">
+          <div class="callout__contents">
+            <h2 class="callout__headings">Ready to Get Started?</h2>
+            <p class="callout__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
+              unde consectetur ducimus fugiat eligendi natus quisquam! Ipsum
+              suscipit ducimus pariatur dolorum inventore aliquam tenetur sit
+              quis, perspiciatis nemo quod repellendus!
+            </p>
+          </div>
+          <a href="#" class="btn btn--secondary">Get Started</a>
+        </div>
+      </div>
       <div class="container grid grid--1x4">
         <div class="collapsible collapsible--expanded footer__section">
-          <header class="collapsible__header">
+          <div class="collapsible__header">
             <h3 class="collapsible__heading footer__heading">Products</h3>
             <svg class="icon collapsible__chevron">
-              <use xlink:href="images/sprite.svg#chevron"></use>
+              <use href="images/sprite.svg#chevron"></use>
             </svg>
-          </header>
+          </div>
 
           <div class="collapsible__content">
             <ul class="list">
@@ -442,12 +465,12 @@
           </div>
         </div>
         <div class="collapsible footer__section">
-          <header class="collapsible__header">
+          <div class="collapsible__header">
             <h3 class="collapsible__heading footer__heading">Company</h3>
             <svg class="icon collapsible__chevron">
-              <use xlink:href="images/sprite.svg#chevron"></use>
+              <use href="images/sprite.svg#chevron"></use>
             </svg>
-          </header>
+          </div>
           <div class="collapsible__content">
             <ul class="list">
               <li class="list__item"><a href="#">About</a></li>
@@ -461,12 +484,12 @@
           </div>
         </div>
         <div class="collapsible footer__section">
-          <header class="collapsible__header">
+          <div class="collapsible__header">
             <h3 class="collapsible__heading footer__heading">Support</h3>
             <svg class="icon collapsible__chevron">
-              <use xlink:href="images/sprite.svg#chevron"></use>
+              <use href="images/sprite.svg#chevron"></use>
             </svg>
-          </header>
+          </div>
           <div class="collapsible__content">
             <ul class="list">
               <li class="list__item"><a href="#">Contact</a></li>
@@ -479,12 +502,12 @@
           </div>
         </div>
         <div class="collapsible footer__section">
-          <header class="collapsible__header">
+          <div class="collapsible__header">
             <h3 class="collapsible__heading footer__heading">Domains</h3>
             <svg class="icon collapsible__chevron">
-              <use xlink:href="images/sprite.svg#chevron"></use>
+              <use href="images/sprite.svg#chevron"></use>
             </svg>
-          </header>
+          </div>
           <div class="collapsible__content">
             <ul class="list">
               <li class="list__item"><a href="#">Domain Checker</a></li>
@@ -503,5 +526,9 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
